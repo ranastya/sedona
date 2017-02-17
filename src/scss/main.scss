@@ -51,3 +51,24 @@ body {
         height: 70px;
     }
 }
+
+.main-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-welcome__welcome {
+    width: 256px;
+    height: 86px;
+}
+
+.main-welcome__logo {
+    width: 458px;
+    height: 78px;
+}
+
+.main-welcome__quote {
+    width: 296px;
+    height: 80px;
+}
