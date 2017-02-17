@@ -1,0 +1,20 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__welcome {
+        width: 256px;
+        height: 86px;
+    }
+
+    &__logo {
+        width: 458px;
+        height: 78px;
+    }
+
+    &__quote {
+        width: 296px;
+        height: 80px;
+    }
+}
