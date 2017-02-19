@@ -2,19 +2,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1200px;
+    height: 725px;
+    background: url('/img/background.png');
+    background-position-y: -55px;
 
     &__welcome {
         width: 256px;
         height: 86px;
+        margin-top: 77px;
+        margin-bottom: 52px;
     }
 
     &__logo {
         width: 458px;
         height: 78px;
+        margin-bottom: 56px;
     }
 
     &__quote {
         width: 296px;
         height: 80px;
+        margin-bottom: 125px;
+    }
+
+    &__text {
+
+        &--sedona {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 21px;
+            color: #000;
+            width: 440px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        &--reasons {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #000;
+        }
+
     }
 }
