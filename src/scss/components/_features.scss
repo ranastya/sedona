@@ -46,6 +46,8 @@
 .item__blue {
     background-color: #81b3d2;
     color: #fff;
+    z-index: -2;
+    position: relative;
 
     &--title {
         width: 200px;
@@ -60,20 +62,19 @@
         margin: 30px 0;
         background-color: #81b3d2;
         position: relative;
-        z-index: 2;
         display: block;
+        padding: 0 5px;
 
         &::before {
             content: "";
             display: block;
             width: 50px;
             position: absolute;
-            z-index: 1;
+            z-index: -1;
             height: 1px;
             background: #fff;
             bottom: 9px;
-            left: -15px;
-
+            left: -10px;
         }
     }
 
@@ -88,6 +89,8 @@
 .item__grey {
     background-color: #eeeeee; 
     color: #000;
+    z-index: -2;
+    position: relative;
 
     &--title {
         width: 150px;
@@ -100,6 +103,22 @@
         align-self: center;
         font-size: 14px;
         margin: 30px 0;
+        background-color: #eeeeee;
+        position: relative;
+        display: block;
+        padding: 0 5px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 50px;
+            position: absolute;
+            z-index: -1;
+            height: 1px;
+            background: #000;
+            bottom: 9px;
+            left: -10px;
+        }
 
     }
 
