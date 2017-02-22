@@ -1,20 +1,68 @@
 .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    &__first-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1200px;
+        background: url('/img/background.png');
+        background-position-y: -55px;
+    }
 
     &__welcome {
         width: 256px;
         height: 86px;
+        margin-top: 77px;
+        margin-bottom: 52px;
     }
 
     &__logo {
         width: 458px;
         height: 78px;
+        margin-bottom: 56px;
     }
 
     &__quote {
         width: 296px;
         height: 80px;
+        margin-bottom: 80px;
     }
+
+    &__text-wrapper {
+        display: flex;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        width: 1200px;
+        position: relative;
+
+        &::before {
+            content: url('/img/frame.png');
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: -57px;
+            left: 0;
+        }
+    }
+
+    &__text {
+        color: #000;
+        text-transform: uppercase;
+            
+        &--sedona {
+            font-weight: bold;
+            font-size: 21px;
+            width: 440px;
+            margin: 60px 0 25px 0;
+            text-align: center;
+        }
+
+        &--reasons {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 58px;
+        }
+    }   
 }
