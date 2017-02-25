@@ -1,0 +1,110 @@
+.search-hotel {
+    // display: flex;
+    // text-transform: uppercase;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    text-transform: uppercase;
+
+    &__question {
+        font-size: 30px;
+        margin: 60px auto 35px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+    &__form-wrapper {
+        position: relative;
+    }
+
+    &__button {
+        width: 568px;
+        padding: 30px;
+        background-color: #766357; 
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 568px;
+        padding: 55px;
+        background: #fff;
+        left: calc(50% - 284px);
+    }
+
+    &__line {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 55px;
+        }
+    }
+
+    &__form-input {
+        background: #f2f2f2 no-repeat;
+        border: none;
+        padding: 15px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+
+        &::-webkit-inner-spin-button, 
+        &::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+
+
+        &--long {
+            width: 346px;
+            height: 38px;
+            padding-right: 40px;
+            background-image: url('/img/date.png');
+            background-position: 98%;
+        }
+
+        &--short {
+            width: 114px;
+            height: 38px; 
+            text-align: center;
+        } 
+    }
+
+    &__form-items {
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    &__form-button {
+        width: 100%;
+        background: #81b3d2;
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 auto;
+        padding: 15px; 
+    }
+
+    &__map {
+        height: 593px;
+        //background: url('/img/map.png');
+    }
+}

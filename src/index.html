@@ -88,37 +88,45 @@
         </div>
         <div class="search-hotel">
             <h2 class="search-hotel__question">Заинтересовались?</h2>
-            <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="search-hotel__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <div class="search-hotel__form-wrapper">
                 <div class="search-hotel__button">Поиск гостиницы в Седоне</div>
                 <form class="search-hotel__form">
-                    <label for="arrival-date">Дата заезда</label>
-                    <input id="arrival-date">
-                    <label for="departure-date">Дата выезда</label>
-                    <input id="departure-date">
-                    <label for="adults">Взрослые</label>
-                    <input id="adults">
-                    <label for="children">Дети</label>
-                    <input id="children">
-                    <div class="search-hotel__form--button">Найти</div>
+                    <div class="search-hotel__line">
+                        <label class="search-hotel__form-items" for="arrival-date">Дата заезда:</label>
+                        <input class="search-hotel__form-input search-hotel__form-input--long" type="date" id="arrival-date">
+                    </div>
+                    <div class="search-hotel__line">
+                        <label class="search-hotel__form-items" for="departure-date">Дата выезда:</label>
+                        <input class="search-hotel__form-input search-hotel__form-input--long" type="date" id="departure-date">
+                    </div>
+                    <div class="search-hotel__line">
+                        <label class="search-hotel__form-items" for="adults">Взрослые:</label>
+                        <input class="search-hotel__form-input search-hotel__form-input--short" type="number" id="adults">
+                        <label class="search-hotel__form-items" for="children">Дети:</label>
+                        <input class="search-hotel__form-input search-hotel__form-input--short" type="number" id="children">
+                    </div>
+                    <submit class="search-hotel__form-button">Найти</submit>
                 </form>
             </div>
-            <div class="search-hotel__map"></div>
+            <div class="search-hotel__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657896.1181387614!2d-112.06435263852373!3d34.57947580936425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbcfabe86941e26f0!2sCity+of+Sedona!5e0!3m2!1sru!2sru!4v1488052201217" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
     </main>
     <footer class="main-footer">
-        <div class="container">
-            <section class="main-footer__tag">
-                <a class="main-footer__tag--visit" href="#">#visitsedona</a>
+        <div class="container main-footer__wrapper">
+            <section class="main-footer__tag-wrapper">
+                <a class="main-footer__tag" href="#">#visitsedona</a>
             </section>
-            <section class="main-footer__social">
-                <a class="main-footer__social--twitter" href="#">Twitter</a>
-                <a class="main-footer__social--facebook" href="#">Facebook</a>
-                <a class="main-footer__social--youtube" href="#">Youtube</a>
+            <section class="main-footer__social-wrapper">
+                <a class="main-footer__social main-footer__social--twitter" href="#">Twitter</a>
+                <a class="main-footer__social main-footer__social--facebook" href="#">Facebook</a>
+                <a class="main-footer__social main-footer__social--youtube" href="#">Youtube</a>
             </section>
-            <section class="main-footer__copyright">
-                <p class="main-footer__copyright--text">Website by</p>
-                <img class="main-footer__copyright--academy" src="./img/academy.png" alt="Html Academy">
+            <section class="main-footer__copyright-wraper">
+                <p class="main-footer__copyright-text">Website by</p>
+                <img class="main-footer__copyright-academy" src="./img/academy.png" alt="Html Academy">
             </section>
         </div>
     </footer>
