@@ -38,12 +38,15 @@
         left: calc(50% - 284px);
     }
 
-    &__element-minus {
+    &__input-wrapper {
+        display: flex; 
+    }
+
+    &__input-elements {
+        position: relative;
         height: 38px;
         width: 38px;
         background: #f2f2f2;
-        position: absolute;
-        z-index: 2;
 
         &::before {
             content: "";
@@ -65,34 +68,9 @@
             background: #81b3d2;
         }
 
-        &--adults {
-            margin-left: 112px;
-        }
+        &--plus {
 
-        &--children {
-            margin-left: 344px;
-        }
-    }
-
-    &__element-plus {
-        height: 38px;
-        width: 38px;
-        background: #f2f2f2;
-        position: absolute;
-        z-index: 2;
-
-        &::before {
-            content: "";
-            display: block;
-            width: 12px;
-            position: absolute;
-            height: 3px;
-            background: #a9a9a9;
-            bottom: 17px;
-            left: 13px;
-        }
-
-        &::after {
+            &::after {
             content: "";
             display: block;
             width: 12px;
@@ -102,32 +80,16 @@
             bottom: 17px;
             left: 13px;
             transform: rotate(90deg);
-        }
+            }    
+        
+            &:hover::after {
+                background: #000;
+                cursor: pointer;
+            }
 
-        &:hover::before {
-            background: #000;
-            cursor: pointer;
-        }
-
-        &:active::before {
-            background: #81b3d2;
-        }
-
-        &:hover::after {
-            background: #000;
-            cursor: pointer;
-        }
-
-        &:active::after {
-            background: #81b3d2;
-        }
-
-        &--adults {
-            margin-left: 188px;
-        }
-
-        &--children {
-            margin-left: 420px;
+            &:active::after {
+                background: #81b3d2;
+            }
         }
     }
 
@@ -186,9 +148,10 @@
         }
 
         &--short {
-            width: 114px;
+            width: 38px;
             height: 38px; 
             text-align: center;
+            padding: 15px 0;
         } 
     }
 
@@ -224,3 +187,4 @@
         //background: url('/img/map.png');
     }
 }
+ 
