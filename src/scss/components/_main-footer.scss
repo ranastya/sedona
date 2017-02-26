@@ -38,19 +38,40 @@ body {
             margin-right: 8px;
         }
 
+        &:hover {
+            background-color: #669ec1;
+            cursor: pointer;
+        } 
+
+        &:active {
+            background-color: #5596be;
+        }
+
         &--twitter {
             background-image: url('/img/twitter.png');
             background-position: center;
+
+            &:active {
+                background-image: url('/img/t2.png');
+            }
         }
 
         &--facebook { 
             background-image: url('/img/facebook.png');
             background-position: center;
+
+            &:active {
+                background-image: url('/img/f2.png');
+            }
         }
 
         &--youtube {
             background-image: url('/img/youtube.png');
             background-position: center;
+
+            &:active {
+                background-image: url('/img/y2.png');
+            }
         }
     }
 
@@ -67,8 +88,17 @@ body {
     }
 
     &__copyright-academy {
+        background-image: url('/img/academy.png');
         width: 113px;
         height: 39px;
-    }
 
+        &:hover {
+            background-image: url('/img/academy2.png');
+            cursor: pointer;
+        } 
+
+        &:active {
+            background-image: url('/img/academy3.png');
+        }
+    }
 }

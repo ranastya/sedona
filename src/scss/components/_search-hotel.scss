@@ -1,9 +1,4 @@
 .search-hotel {
-    // display: flex;
-    // text-transform: uppercase;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     text-transform: uppercase;
 
     &__question {
@@ -43,6 +38,99 @@
         left: calc(50% - 284px);
     }
 
+    &__element-minus {
+        height: 38px;
+        width: 38px;
+        background: #f2f2f2;
+        position: absolute;
+        z-index: 2;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 12px;
+            position: absolute;
+            height: 3px;
+            background: #a9a9a9;
+            bottom: 17px;
+            left: 13px;
+        }
+
+        &:hover::before {
+            background: #000;
+            cursor: pointer;
+        }
+
+        &:active::before {
+            background: #81b3d2;
+        }
+
+        &--adults {
+            margin-left: 112px;
+        }
+
+        &--children {
+            margin-left: 344px;
+        }
+    }
+
+    &__element-plus {
+        height: 38px;
+        width: 38px;
+        background: #f2f2f2;
+        position: absolute;
+        z-index: 2;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 12px;
+            position: absolute;
+            height: 3px;
+            background: #a9a9a9;
+            bottom: 17px;
+            left: 13px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 12px;
+            position: absolute;
+            height: 3px;
+            background: #a9a9a9;
+            bottom: 17px;
+            left: 13px;
+            transform: rotate(90deg);
+        }
+
+        &:hover::before {
+            background: #000;
+            cursor: pointer;
+        }
+
+        &:active::before {
+            background: #81b3d2;
+        }
+
+        &:hover::after {
+            background: #000;
+            cursor: pointer;
+        }
+
+        &:active::after {
+            background: #81b3d2;
+        }
+
+        &--adults {
+            margin-left: 188px;
+        }
+
+        &--children {
+            margin-left: 420px;
+        }
+    }
+
     &__line {
         display: flex;
         width: 100%;
@@ -63,6 +151,9 @@
         font-size: 14px;
         color: #000;
         font-weight: bold;
+        position: relative;
+        z-index: 1;
+        outline: none;
 
         &::-webkit-inner-spin-button, 
         &::-webkit-outer-spin-button { 
@@ -70,6 +161,12 @@
             margin: 0; 
         }
 
+        &:focus {
+            background-color: #fff;
+            background-repeat: no-repeat;
+            border: 2px solid #f2f2f2;
+            cursor: pointer;
+        }
 
         &--long {
             width: 346px;
@@ -77,6 +174,15 @@
             padding-right: 40px;
             background-image: url('/img/date.png');
             background-position: 98%;
+
+            &:hover {
+                background-image: url('/img/date2.png');
+                cursor: pointer;
+            } 
+
+            &:active {
+                background-image: url('/img/date3.png');
+            }
         }
 
         &--short {
@@ -100,7 +206,17 @@
         font-weight: bold;
         color: #fff;
         margin: 0 auto;
-        padding: 15px; 
+        padding: 15px;
+
+        &:hover {
+            background: #669ec1;
+            cursor: pointer;
+        } 
+
+        &:active {
+            background: #5596be;
+            color: #96b8d4;
+        }
     }
 
     &__map {
