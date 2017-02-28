@@ -15,6 +15,10 @@ body {
         background: rgba(255, 255, 255, 0.9);
     }
 
+    &__tag-wrapper {
+        width: 195px;
+    }
+
     &__tag {
         text-transform: uppercase;
         font-size: 21px;
@@ -25,6 +29,7 @@ body {
 
     &__social-wrapper {
         display: flex;
+        //margin-left: 50px;
     }
 
     &__social {
@@ -75,7 +80,7 @@ body {
         }
     }
 
-    &__copyright-wraper {
+    &__copyright-wrapper {
         display: flex;
         align-items: center;   
     }
