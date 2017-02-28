@@ -29,6 +29,15 @@
         color: #000;
         text-decoration: none;
         font-weight: bold;
+
+        &:hover {
+            color: #81b3d2;
+            cursor: pointer;
+        } 
+
+        &:active {
+            color: #b2b2b2;
+        }
     }
 
     &__logo {
