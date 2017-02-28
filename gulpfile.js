@@ -77,7 +77,7 @@ gulp.task('js', function() {
 gulp.task('vendor-css', function() {
 
 	return combiner(
-		gulp.src('src/js/plagins/*.css'),
+		gulp.src('src/js/plugins/*.css'),
 		concat('vendor.css'),
 		minify(),
 		gulp.dest('public/css')
@@ -88,7 +88,7 @@ gulp.task('vendor-css', function() {
 gulp.task('vendor-js', function() {
 
 	return combiner(
-		gulp.src('src/js/plagins/*.js'),
+		gulp.src('src/js/plugins/*.js'),
 		concat('vendor.js'),
 		uglify(),
 		gulp.dest('public/js')
