@@ -3,16 +3,22 @@ body {
 }
 
 .main-footer {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 600px);
+
+    &--opacity {
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 600px);
+    }
 
     &__wrapper {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 120px;
-        background: rgba(255, 255, 255, 0.9);
+
+        &--opacity {
+            background: rgba(255, 255, 255, 0.9);
+        }
     }
 
     &__tag-wrapper {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="main-header container">
+        <nav class="main-navigation">
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">Информация</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">Фото и видео</a>
+                </li>
+                <li class="main-navigation__item main-navigation__item--logo">
+                    <a class="main-navigation__link" href="#">
+                        <img class="main-navigation__logo" src="./img/logo.png" alt="Logo">
+                    </a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">Карта штата</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="search-bar">
+            <div class="search-bar__column-wrapper">
+                <div class="search-bar__column">
+                    <p class="search-bar__title">Инфраструктура:</p>
+                    <div class="search-bar__checkbox-wrapper">
+                        <input class="search-bar__checkbox" type="checkbox" id="pool">
+                        <label class="search-bar__label" for="pool">Бассейн</label>
+                    </div>
+                    <div class="search-bar__checkbox-wrapper">
+                        <input class="search-bar__checkbox" type="checkbox" id="parking">
+                        <label class="search-bar__label" for="parking">Парковка</label>
+                    </div>
+                    <div class="search-bar__checkbox-wrapper">
+                        <input class="search-bar__checkbox" type="checkbox" id="wi-fi">
+                        <label class="search-bar__label" for="wi-fi">Wi-Fi</label>
+                    </div>
+                </div>
+                <div class="search-bar__column">
+                    <p class="search-bar__title">Тип жилья:</p>
+                    <div class="search-bar__checkbox-wrapper">
+                        <input class="search-bar__checkbox" type="checkbox" id="hotel">
+                        <label class="search-bar__label" for="hotel">Гостиница</label>
+                    </div>
+                    <div class="search-bar__checkbox-wrapper">
+                        <input class="search-bar__checkbox" type="checkbox" id="motel">
+                        <label class="search-bar__label" for="motel">Мотель</label>
+                    </div>
+                    <div class="search-bar__checkbox-wrapper">
+                        <input class="search-bar__checkbox" type="checkbox" id="apartments">
+                        <label class="search-bar__label" for="apartments">Апартаменты</label>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar__cost">
+                <p class="search-bar__title search-bar__title--cost">Стоимость в сутки (р):</p>
+                <div class="search-bar__input-wrapper">
+                    <input class="search-bar__input search-bar__input--minimum" type="number" value="0" min="0">
+                    <input class="search-bar__input" type="number" value="3000" min="0">
+                </div>
+                <div class="search-bar__range-wrapper">
+                    <input class="search-bar__range" type="range" min="0" max="5000" step="1000" value="3000">
+                </div>
+                <div class="search-bar__button">Показать</div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container main-footer__wrapper">
+            <section class="main-footer__tag-wrapper">
+                <a class="main-footer__tag" href="#">#visitsedona</a>
+            </section>
+            <section class="main-footer__social-wrapper">
+                <a class="main-footer__social main-footer__social--twitter" href="#">Twitter</a>
+                <a class="main-footer__social main-footer__social--facebook" href="#">Facebook</a>
+                <a class="main-footer__social main-footer__social--youtube" href="#">Youtube</a>
+            </section>
+            <section class="main-footer__copyright-wrapper">
+                <p class="main-footer__copyright-text">Website by</p>
+                <div class="main-footer__copyright-academy"></div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
