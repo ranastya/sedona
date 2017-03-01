@@ -29,7 +29,7 @@
     }
 
     &__form {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         position: absolute;
         width: 568px;
@@ -184,7 +184,7 @@
 
     &__map {
         height: 593px;
-        //background: url('/img/map.png');
+        background: url('/img/map.png');
     }
 }
  
