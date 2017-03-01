@@ -38,6 +38,7 @@
         position: relative;
         padding-left: 40px;
         cursor: pointer;
+        user-select: none;
 
         &::before {
             content: url('/img/checkbox.png');
